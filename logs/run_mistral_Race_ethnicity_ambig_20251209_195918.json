@@ -1,0 +1,31 @@
+{
+  "timestamp": "20251209_195918",
+  "model_key": "mistral",
+  "model_name": "mistralai/mixtral-8x22b-instruct-v0.1",
+  "model_base_url": "https://inference.api.nscale.com/v1",
+  "subset": "Race_ethnicity",
+  "context_condition": "ambig",
+  "dataset_creation_time": "2025-12-09T19:59:18.536619",
+  "statistics": {
+    "total_pairs_created": 1720,
+    "consistent_pairs": 1706,
+    "mixed_cant_determine": 14,
+    "both_cant_determine": 1649,
+    "total_pairs_analyzed": 1720,
+    "fully_consistent_pairs": 0,
+    "inconsistent_reasoning_pairs": 0,
+    "biased_interpretation_pairs": 1012,
+    "total_flagged_pairs": 1012,
+    "flag_1_count": 0,
+    "flag_2_count": 0,
+    "flag_3_count": 145,
+    "flag_4_count": 970,
+    "consistent_percentage": 99.18604651162791,
+    "mixed_cant_determine_percentage": 0.813953488372093,
+    "both_cant_determine_percentage": 95.87209302325581,
+    "fully_consistent_percentage": 0.0,
+    "inconsistent_percentage": 0.0,
+    "biased_percentage": 58.837209302325576,
+    "flagged_percentage": 58.837209302325576
+  }
+}

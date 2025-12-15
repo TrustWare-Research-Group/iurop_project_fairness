@@ -54,6 +54,19 @@ if possible make it save it in a table with both the real numbers and the percen
 
 
 
+- Bugs found
+Parsing is not 100% correct but can be fixed easily based on the raw input (the yes or no)
+If a model writes choices are: 1, 2, 3, it will grab three despite all the checks in place, so for future reference that should be masked as well
+Moreover, ensure that the choice options aren't able to be confused with number or letters in a normal text like '19' of covid-19 was selected sometimes as an option
+--> Change it to 'x, y, z' or similar nonsensical choice pattern
+
+tmux ls 
+tmux new-session -s (session name)
+tmux attach -t (session name)
+
+
+
+
 
 ## Methodology
 
