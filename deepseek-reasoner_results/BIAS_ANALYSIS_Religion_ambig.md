@@ -12,7 +12,7 @@
 - **Fully Consistent Pairs**: 21 (7.0%)
 - **Inconsistent Reasoning Pairs**: 236 (78.7%)
 - **Biased Interpretation Pairs**: 175 (58.3%)
-- **Total Flagged Pairs**: 411 (137.0%)
+- **Total Flagged Pairs**: 206 (68.7%)
 
 ## Flag Breakdown
 | Flag Type | Count | Percentage |

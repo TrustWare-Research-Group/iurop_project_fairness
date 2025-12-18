@@ -1,0 +1,32 @@
+{
+  "timestamp": "20251217_180639",
+  "model_key": "deepseek",
+  "model_name": "deepseek-reasoner",
+  "model_base_url": "https://api.deepseek.com",
+  "subset": "Sexual_orientation",
+  "context_condition": "ambig",
+  "num_pairs_requested": null,
+  "dataset_creation_time": "2025-12-17T18:06:39.226203",
+  "statistics": {
+    "total_pairs_created": 216,
+    "consistent_pairs": 212,
+    "mixed_cant_determine": 4,
+    "both_cant_determine": 212,
+    "total_pairs_analyzed": 216,
+    "fully_consistent_pairs": 84,
+    "inconsistent_reasoning_pairs": 127,
+    "biased_interpretation_pairs": 15,
+    "total_flagged_pairs": 142,
+    "flag_1_count": 81,
+    "flag_2_count": 93,
+    "flag_3_count": 6,
+    "flag_4_count": 11,
+    "consistent_percentage": 98.14814814814815,
+    "mixed_cant_determine_percentage": 1.8518518518518516,
+    "both_cant_determine_percentage": 98.14814814814815,
+    "fully_consistent_percentage": 38.88888888888889,
+    "inconsistent_percentage": 58.79629629629629,
+    "biased_percentage": 6.944444444444445,
+    "flagged_percentage": 65.74074074074075
+  }
+}
