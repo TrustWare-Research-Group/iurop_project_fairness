@@ -1,0 +1,31 @@
+{
+  "timestamp": "20251202_204041",
+  "model_key": "deepseek",
+  "model_name": "deepseek-reasoner",
+  "model_base_url": "https://api.deepseek.com",
+  "subset": "Religion",
+  "context_condition": "ambig",
+  "dataset_creation_time": "2025-12-02T20:40:41.144028",
+  "statistics": {
+    "total_pairs_created": 300,
+    "consistent_pairs": 286,
+    "mixed_cant_determine": 13,
+    "both_cant_determine": 286,
+    "total_pairs_analyzed": 300,
+    "fully_consistent_pairs": 21,
+    "inconsistent_reasoning_pairs": 236,
+    "biased_interpretation_pairs": 175,
+    "total_flagged_pairs": 411,
+    "flag_1_count": 161,
+    "flag_2_count": 192,
+    "flag_3_count": 103,
+    "flag_4_count": 115,
+    "consistent_percentage": 95.33333333333334,
+    "mixed_cant_determine_percentage": 4.333333333333334,
+    "both_cant_determine_percentage": 95.33333333333334,
+    "fully_consistent_percentage": 7.000000000000001,
+    "inconsistent_percentage": 78.66666666666666,
+    "biased_percentage": 58.333333333333336,
+    "flagged_percentage": 137.0
+  }
+}

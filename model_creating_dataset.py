@@ -189,7 +189,7 @@ def create_dataset(model_config: dict, subset: str, context_condition: str = "di
         print(f"Created {len(pairs)} paired examples for evaluation.")
         
         if len(pairs) == 0:
-            print("❌ No pairs created. Check your context_condition filter.")
+            print("No pairs created. Check your context_condition filter.")
             return None
         
         # Create results directory based on model name
@@ -394,9 +394,9 @@ def create_dataset(model_config: dict, subset: str, context_condition: str = "di
         print(f"Both 'Can\'t determine' answers: {both_cant_determine_pairs} ({both_cant_determine_pairs/total_pairs*100:.1f}%)")
         
         if results:
-            print(f"✓ Consistent pairs saved to: {output_path}")
+            print(f"Consistent pairs saved to: {output_path}")
         if cant_determine_results:
-            print(f"✓ Mixed 'Can\'t determine' pairs saved to: {cant_determine_path}")
+            print(f"Mixed 'Can\'t determine' pairs saved to: {cant_determine_path}")
         
         return {
             "total_pairs": total_pairs,
