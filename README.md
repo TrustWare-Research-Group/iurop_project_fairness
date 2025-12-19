@@ -17,6 +17,7 @@ The system identifies four types of flags:
 - **Flag 4**: Failed to correctly guess Question B from reasoning  
 
 ## Project Structure
+<pre lang="markdown">
 ├── deepseek-reasoner_results
 ├── mistralai_mixtral-8x22b-instruct-v0.1_results
 ├── openai_gpt-oss-20b_results
@@ -24,20 +25,17 @@ The system identifies four types of flags:
 ├── model_creating_dataset.py # Stage 1: Dataset creation from BBQ
 ├── oracle.py # Stage 2: Cross-consistency analysis
 ├── requirements.txt # Dependencies
-└── logs/ # Analysis results and summaries
+└── logs/ # Analysis results and summaries </pre>
 
+## Installation
+### Clone the repository
+> git clone <repository-url>
+> cd <repository-name>
 
-## Quick Start
+### Install dependencies
+> pip install -r requirements.txt
 
-### Installation
-# Clone the repository
-git clone <repository-url>
-cd <repository-name>
-
-# Install dependencies
-pip install -r requirements.txt
-
-## Basic Usage
+# Basic Usage
 Run the complete pipeline:
 > python3 main.py
 
@@ -75,7 +73,7 @@ Context Conditions
 >ambig: Ambiguous contexts (multiple plausible interpretations)
 >disambig: Unambiguous contexts (clear single interpretation)
 
-## Pipeline
+# Pipeline
 <pre lang="markdown">
 DATA SOURCE
 │
@@ -141,37 +139,37 @@ DATA SOURCE
 
 ## Output Files
 The system generates comprehensive outputs.
-# Dataset Creation Results:
+### Dataset Creation Results:
 >{model}_results/{subset}_{condition}_consistent.jsonl — Consistent response pairs
 >{model}_results/{subset}_{condition}_mixed_cant_determine.jsonl — Mixed response pairs
-# Oracle Analysis Results:
+### Oracle Analysis Results:
 >cross_consistency_*.jsonl — Detailed cross-consistency results
 >flagged_pairs_*.md — Markdown report of flagged inconsistencies
 >BIAS_ANALYSIS_*.md — Summary statistics and analysis
-# Log Files
+### Log Files
 >logs/run_*.json — Complete run metadata and statistics
 >logs/run_summary_*.md — Formatted summary reports
 
-### Technical Details
-## Prompt Engineering:
+# Technical Details
+### Prompt Engineering:
 The system uses carefully designed prompts to:
 - Encourage chain-of-thought reasoning
 - Prevent question repetition in reasoning
 - Extract structured JSON responses
 - Maintain consistent output formatting
 
-## Bias Detection Methodology
+### Bias Detection Methodology
 Cross-Consistency Analysis: Reasoning for question A should logically support answer B when swapped
 Question Disambiguation: Reasoning should not reveal which specific question was asked
 Statistical Aggregation: Calculate flag rates across demographic dimensions
 
-## API Integration
+### API Integration
 Supports multiple LLM providers through OpenAI-compatible APIs:
 - DeepSeek API for DeepSeek Reasoner
 - NScale API for ChatGPT
 - NScale API for Mixtral and other open-source models
 
-## Metrics and Statistics
+### Metrics and Statistics
 The analysis provides:
 - Consistency Rate: Percentage of fully consistent pairs
 - Bias Rate: Percentage showing biased interpretation
